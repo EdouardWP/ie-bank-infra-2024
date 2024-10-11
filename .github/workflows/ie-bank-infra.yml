@@ -7,9 +7,10 @@ on:
         - '!scripts/**'
 
 env:
-  RESOURCE_GROUP_DEV: aguadamillas_resources
+  RESOURCE_GROUP_DEV: BCSAI2024-DEVOPS-STUDENTS-A-DEV
+  # RESOURCE_GROUP_UAT: put UAT azure name here
   SUBSCRIPTION_ID_DEV: e0b9cada-61bc-4b5a-bd7a-52c606726b3b
-  USER_ALIAS: aguadamillas
+  USER_ALIAS: ewidmaierrui
 
 jobs:
   build:
@@ -49,3 +50,5 @@ jobs:
         template: ./main.bicep
         parameters: ./parameters/dev.parameters.json appServiceAPIEnvVarENV=${{ vars.ENV }} appServiceAPIEnvVarDBHOST=${{ vars.DBHOST }} appServiceAPIEnvVarDBNAME=${{ vars.DBNAME }} appServiceAPIEnvVarDBPASS=${{ secrets.DBPASS }} appServiceAPIDBHostDBUSER=${{ secrets.DBUSER }} appServiceAPIDBHostFLASK_APP=${{ vars.FLASK_APP }} appServiceAPIDBHostFLASK_DEBUG=${{ vars.FLASK_DEBUG }}
         deploymentName: ${{ env.USER_ALIAS }}
+
+        # for UAT, change parameters from dev.parameters.json to uat.parameters.json
