@@ -6,19 +6,19 @@
             "value": "nonprod"
         },
         "postgreSQLServerName": {
-            "value": "ewidmaierrui1-dbsrv-dev"
+            "value": "ewidmaierrui2-dbsrv-dev"
         },
         "postgreSQLDatabaseName": {
-            "value": "ewidmaierrui1-db-dev"
+            "value": "ewidmaierrui2-db-dev"
         },
         "appServicePlanName": {
-            "value": "ewidmaierrui1-asp-dev"
+            "value": "ewidmaierrui2-asp-dev"
         },
         "appServiceAPIAppName": {
-            "value": "ewidmaierrui1-be-dev"
+            "value": "ewidmaierrui2-be-dev"
         },
         "appServiceAppName": {
-            "value": "ewidmaierrui1-fe-dev"
+            "value": "ewidmaierrui2-fe-dev"
         },
         "location": {
             "value": "North Europe"
